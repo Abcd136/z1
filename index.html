@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>皮卡商店</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            padding: 10px 15px;
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: #f5f5f5;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .search-bar input {
+            border: none;
+            background: transparent;
+            width: 100%;
+            padding: 0 10px;
+            font-size: 14px;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-item {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nav-item.active {
+            color: #1a73e8;
+        }
+
+        .app-list {
+            padding: 15px;
+        }
+
+        .app-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .app-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+
+        .app-info {
+            flex: 1;
+        }
+
+        .app-name {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .app-category {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .app-size {
+            font-size: 12px;
+            color: #666;
+            margin-left: 10px;
+        }
+
+        .rating {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        .bottom-nav-item {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 10px;
+            padding: 10px 15px;
+            background: #fff;
+        }
+
+        .filter-button {
+            padding: 5px 15px;
+            border-radius: 15px;
+            border: 1px solid #ddd;
+            background: #fff;
+            font-size: 14px;
+        }
+
+        .filter-button.active {
+            background: #e8f0fe;
+            color: #1a73e8;
+            border-color: #1a73e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="search-bar">
+            
+        <div class="nav-tabs">
+            <a href="#" class="nav-item active">为您推荐</a>
+            <a href="#" class="nav-item">最近更新</a>
+        </div>
+    </div>
+
+    <div class="filter-bar">
+        <button class="filter-button active">今日热门</button>
+    </div>
+
+    <div class="app-list">
+        <div class="app-item">
+            <img src="https://files.catbox.moe/f8v9t3.jpg" alt="雪女" class="app-icon">
+            <div class="app-info">
+                <div class="app-name">
+                    <a href="https://abcd136.github.io/x/" style="color: black; text-decoration: none;">美少女万华镜异闻 雪女</a>
+            </div>
+                <div class="app-category">游戏・角色扮演</div>
+                <div class="rating">8.6 ★ <span class="app-size">1.07GB</span></div>
+            </div>
+        
+        
+    <div class="bottom-nav">
+        <div class="bottom-nav-item">
+            <div>📱</div>
+            <div>
+                <a href="https://abcd136.github.io/z/" style="color: black; text-decoration: none;">应用</a>
+                </div>
+        </div>
+
+        <div class="bottom-nav-item">
+            <div>🎮</div>
+            <div>
+                <a href="https://abcd136.github.io/z1/" style="color: black; text-decoration: none;">游戏</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
